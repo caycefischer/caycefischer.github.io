@@ -5,6 +5,6 @@ categories: Vice
 img: vice-image-1.jpg
 ---
 
-This is another, second post
+This is another, 2nd post
 
-![vice1]({{ site.baseurl }}/images/vice/vice-image-1.jpg)
+![_config.yml]({{ site.baseurl }}/images/vice/vice-image-1.jpg)

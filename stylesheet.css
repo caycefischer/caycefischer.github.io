@@ -166,11 +166,11 @@ h2.subsection, h3 {
 }
 
 .entryGallery {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .entryGallery a {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     display: inline-block;
     width: 32%;
     margin: 0 1.5% 0 0;

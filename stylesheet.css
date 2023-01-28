@@ -70,6 +70,13 @@ h2 {
     margin: 0 0 1.4rem;
 }
 
+h2.subsection, h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 1px solid #999;
+    max-width: auto;
+}
+
 #intro {
     font-size: 1.4em;
     line-height: 1.25em;
@@ -158,3 +165,20 @@ h2 {
     font-style: italic;
 }
 
+.entryGallery {
+    outline: 1px solid red;
+}
+
+.entryGallery a {
+    outline: 1px solid blue;
+    display: inline-block;
+    width: 32%;
+    margin: 0 1.5% 0 0;
+}
+
+.entryGallery a:nth-child(3) {
+    margin-right: 0;
+}
+.entryGallery img {
+    max-width: 100%;
+}

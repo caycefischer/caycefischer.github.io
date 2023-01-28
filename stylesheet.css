@@ -1,5 +1,7 @@
 /* Kate Style */
-
+* {
+	box-sizing: border-box;
+}
 body {
     background: whitesmoke;
     font: 16/20 sans-serif;
@@ -155,3 +157,4 @@ h2 {
 .entry figcaption {
     font-style: italic;
 }
+

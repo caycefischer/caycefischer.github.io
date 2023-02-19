@@ -218,7 +218,10 @@ h2.subsection, h3 {
     border: 1.5px solid #555;    
 }
 
-.entryGallery {
+.entryGallery span {
+    margin: 0;
+    font-size: 0.85rem;
+    color: black;
 }
 
 .entryGallery a {

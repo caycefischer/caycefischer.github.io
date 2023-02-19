@@ -4,21 +4,27 @@
 }
 body {
     background: whitesmoke;
-    font: 16/20 sans-serif;
-    padding: 1em;
+    font: 16/20;
+    font-family: "Inter","Helevetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
 }
 
 /* LAYOUT */
 
-.home, .project {
-    background-color: whitesmoke;
+.home {
+    background-color: white;
+}
+
+.project {
+    background: whitesmoke;
 }
 
 .wrapper, .navbar {
-    max-width: 840px;
-    margin: 0 auto 1em;
-    padding: 1em;
+    /* margin: 0 auto 1em; */
+    /* margin: 1em 0 0 3em; */
+    margin: 0;
+    padding: 2em 0em 4em 4em;
+    /* padding: 1em; */
     display: block;
 }
 
@@ -26,23 +32,38 @@ body {
     /* outline: 1px solid grey; */
 }
 
-header {
-    /* outline: 1px solid rebeccapurple; */
+.homelink {
+    color: black;
+    text-decoration: none;
 }
 
-main {
-    /* outline: 1px solid maroon; */
+.homelink:hover {
+    text-decoration: underline;
 }
 
-.home .wrapper {
-
+header.wrapper, .navbar {
+    background-color: LemonChiffon;
+    padding-top: 4em;
 }
 
-.project .wrapper {
+.entry-wrapper {
+    padding-left: 2em;
+    padding-top: 0em;   
+    max-width: 840px;
+}
 
+.entry {
+    padding: 4em 1em 1em 2em;
     background: white;
-    margin-bottom: 0;
+    border-top: 3px solid moccasin;
+}
+.home main.wrapper {
+    max-width: 840px;
+    padding-top: 3em;
+}
 
+.project header.wrapper {
+    background-color: LemonChiffon;
 }
 
 /* FONTS */
@@ -60,53 +81,65 @@ h1 {
 }
 
 .project .pagetitle {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
+    margin-bottom: 0;
 }
 
 h2 {
-    /* outline: 1px solid salmon; */
+    border-bottom: 2px solid #444;
     font-size: 2em;
-    font-family: sans-serif;
-    margin: 0 0 1.4rem;
+    font-family: "Gloock", 'Times New Roman', Times, serif;
+    /* margin: 0 0 1.4rem; */
+    margin: 0;
+    display: inline-block;
+}
+
+.break-clear {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.line-under {
+    
+    display: block;
+    margin: 0 0 1em;
+    padding: 0;
 }
 
 h2.subsection, h3 {
     font-size: 1.4em;
+    margin-bottom: 1.4em;
     font-weight: bold;
-    border-bottom: 1px solid #999;
+    border-bottom: 0;
     max-width: auto;
 }
 
 #intro {
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 1.25em;
-    max-width: 640px;
+    max-width: 720px;
     color: #333;    
     /* outline: 1px solid blue; */
     display: block;
     
 }
 
-.nav-link {
-    color: black;
-    padding: 0.4em 1em;
-    background-color: white;
-    border: 1px solid #bbb;
-    border-radius: 1em;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 1em;
-    margin-right: 1em;
-}
-
-.nav-link:hover {
-    border: 1px solid #999;
-    box-shadow: 0 0 3px #bbb;
+.contacts {
+    
 }
 
 .home-link {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.linkedin {
+    color: #0077b5;
+    font-weight: 600;
+}
+.linkedin:hover {
+    color: black;
 }
 
 /* WORK */
@@ -115,7 +148,7 @@ h2.subsection, h3 {
     display: inline-block;
     width: 30%;
     /* outline: 1px solid black; */
-    margin: 0 2% 2em 0;
+    margin: 2em 2% 2em 0;
     text-decoration-color: black;
 }
 
@@ -125,26 +158,35 @@ h2.subsection, h3 {
 
 
 .thumb p {
-    font-size: 1.2em;
-    font-style: italic;
-    font-family: serif;
+    font-size: 1em;
+    font-family: "Inter","Helevetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
     margin: 0;
     padding: 0;
+    font-weight: 600;
+    color: #222;
 }
 
 .tag-lozenge {
-    background-color: #C1CDF5;
-    margin: 0 1em 1em 0;
-    font-size: 0.7em;
-    padding: 1em;
-    font-family: sans-serif;
+    font-size: 0.6em;
     display: inline-block;
-    border-radius: 2em;
+    color: rebeccapurple;
+    margin-right: 1em;
+    padding: 0.4rem;
+    border-radius: 1em;
+}
+
+.tag-lozenge::before {
+    content:"#";
+}
+
+.tag-lozenge:hover {
+    /* background-color: rgba(147,112,219, 0.2); */
+    /* cursor: pointer; */
 }
 
 .entry p {
-    font-family: sans-serif;
+    font-family: "Inter","Helevetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     line-height: 1.44em;
     max-width: 780px;
@@ -152,27 +194,38 @@ h2.subsection, h3 {
 
 .entry figure {
     /* outline: 1px solid red; */
-    padding: 1em;
+    margin: 2em 4em 4em 0;
+    padding: 0.5em;
+    background: whitesmoke;
+    border: 2px solid rosybrown;
+    position: relative;
 }
 
 .entry figure img {
     max-width: 100%; 
     display: block;
-    margin: 0 0 0.5em;
+    margin: 0;
 }
 
 .entry figcaption {
+    font-family: "Inter","Helevetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    bottom: -1rem;
+    left: 1rem;
+    background: white;
+    display: block;
+    padding: 0.6em 1em;
+    font-size: 0.85em;
     font-style: italic;
+    border: 1.5px solid #555;    
 }
 
 .entryGallery {
-    /* outline: 1px solid red; */
 }
 
 .entryGallery a {
-    /* outline: 1px solid blue; */
     display: inline-block;
-    width: 32%;
+    width: 31%;
     margin: 0 1.5% 0 0;
 }
 

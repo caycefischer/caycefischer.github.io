@@ -275,3 +275,7 @@ hr {
 .sourcing {
     text-style: italic;
 }
+
+.char-anim .project-tags {
+    margin-bottom: -3em;
+}

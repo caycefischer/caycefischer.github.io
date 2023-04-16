@@ -294,7 +294,7 @@ hr {
     font-family: Helvetica, sans-serif;
     color: white;
     font-size: 2rem;
-    text-shadow: 0 0 5px color: rgb(204, 90, 58);
+    text-shadow: 0 0 5px rgb(204, 90, 58);
 }
 
 .video-entries a:hover::after {
@@ -314,7 +314,6 @@ hr {
     font-family: Helvetica, sans-serif;
     color: white;
     font-size: 2rem;
-    text-shadow: 0 0 5px color: rgb(204, 90, 58);
 }
 
 .big-video:hover > a:after {

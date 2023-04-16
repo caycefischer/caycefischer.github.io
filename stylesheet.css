@@ -279,3 +279,44 @@ hr {
 .char-anim .project-tags {
     margin-bottom: -3em;
 }
+
+
+.video-entries a {
+    position: relative;
+}
+.video-entries > a:after {
+    content:"▶";
+    position: absolute;
+    top: calc(50% - 1rem);
+    text-align: center;
+    width: 1em;
+    left: 45%;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 5px color: rgb(204, 90, 58);
+}
+
+.video-entries a:hover::after {
+    color: rgb(204, 90, 58);
+}
+
+.big-video {
+    position: relative;
+}
+.big-video > a:after {
+    content:"▶";
+    position: absolute;
+    top: calc(50% - 1rem);
+    text-align: center;
+    width: 1em;
+    left: 45%;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 5px color: rgb(204, 90, 58);
+}
+
+.big-video:hover > a:after {
+    color: rgb(204, 90, 58);
+}
